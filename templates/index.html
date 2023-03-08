@@ -1,0 +1,568 @@
+{% extends 'homepage.html' %}
+{%load static %}
+{% block content %}
+
+
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPWGNL" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Loading Spinner -->
+<div class="spinner">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+    <div class="line4"></div>
+</div>
+<!--/ Loading Spinner -->
+<div id="page" class="hfeed site invisible">
+    <header class="fly-header-site fly-header-type-1 fly-sticky-header-on">
+        <div class="fly-nav-wrap fly-nav-left">
+            <nav class="fly-site-navigation primary-navigation" id="fly-menu-primary">
+                <ul class="fly-nav-menu">
+                    <li><a href="./">Домой</a>
+                        <ul>
+                            <li><a href="index.html">HOME PAGE</a></li>
+                            <li><a href="index2.html">HEADER TYPE 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="story.html">STORY</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="reservation.html">RESERVATION</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!--Logo-->
+        <div class="fly-wrap-logo"><a class="fly-logo" href="./"> <img src="{{setting.image.url}}" alt="Logo"/> </a></div>
+        <div class="fly-nav-wrap fly-nav-right">
+            <nav class="fly-site-navigation secondary-navigation" id="fly-menu-secondary">
+                <ul class="fly-nav-menu">
+                    <li><a href="offers.html">OFFERS</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="photo.html">PHOTO</a></li>
+                    <li class="menu-item-has-children"><a href="contact.html">CONTACT</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item-has-children"><a href="#">SUB MENU LEVEL 1</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item-has-children"><a href="#">SUB MENU LEVEL 2</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">SUB MENU LEVEL 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">SUB MENU LEVEL 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">SUB MENU LEVEL 1</a></li>
+                            <li><a href="#">SUB MENU LEVEL 1</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="main" class="site-main" role="main">
+        <!--Slider Full-->
+        <section class="fly-slider-full">
+            <div class="main-carousel default">
+                <div id="myCarousel" class="carousel slide">
+                    <div class="carousel-inner">
+                        <!-- Carousel items -->
+                        <div class="item active parallax" style="background-image:url({% static 'images/Home-Slider/slide-1.jpg' %});">
+                            <div class="container">
+                                <div class="fly-itable">
+                                    <div class="fly-icell">
+                                        <div class="fly-wrap-text-slider">
+                                            <h1 class="fly-slider-title-before">RESTAURANT& EVENTS<br>IN THE BORDERS</h1>
+                                            <div class="fly-slider-divider"></div>
+                                            <h2 class="fly-slider-title-after">Delicious, beverages and great-tasting food.<br>The secret to making life better.</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Carousel items -->
+                        <div class="item parallax" style="background-image:url({% static 'images/Home-Slider/slide-2.jpg' %});">
+                            <div class="container">
+                                <div class="fly-itable">
+                                    <div class="fly-icell">
+                                        <div class="fly-wrap-text-slider">
+                                            <h1 class="fly-slider-title-before">GATHER WITH FAMILY &<br>GREAT FOOD</h1>
+                                            <div class="fly-slider-divider"></div>
+                                            <h2 class="fly-slider-title-after">Delicious, beverages and great-tasting food.<br>The secret to making life better.</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Carousel items -->
+                        <div class="item parallax" style="background-image:url({% static 'images/Home-Slider/slide-3.jpg' %});">
+                            <div class="container">
+                                <div class="fly-itable">
+                                    <div class="fly-icell">
+                                        <div class="fly-wrap-text-slider">
+                                            <h1 class="fly-slider-title-before">LOCALLY SOURCED<br>PRODUCE</h1>
+                                            <div class="fly-slider-divider"></div>
+                                            <h2 class="fly-slider-title-after">Delicious, beverages and great-tasting food.<br>The secret to making life better.</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Carousel Indicator-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <!--End Slider Full-->
+        <!--Restaurant Menu (HomePage)-->
+
+        <!--End Restaurant Menu (HomePage)-->        <!--Section (Info Restaurant)-->
+        <section class="fly-info-box container-min">
+            <div class="container">
+                <div class="row">
+                    <div class="fly-divider-space space-md"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="fly-info-box-header">
+                            <i class="fly-info-box-icon flyicon-coffee"></i>
+                            <h3 class="fly-info-box-title">FEW WORDS ABOUT US</h3>
+                            <div class="fly-info-box-divider"></div>
+                        </div>
+                        <div class="fly-info-box-content"> A charming neighbourhood restaurant and bar, located in the
+                            heart of the city; a true gateway to gourmet farm-to-table dining, inspired by seasonal
+                            produce and the province's local suppliers.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="fly-divider-space space-md"></div>
+                </div>
+            </div>
+        </section>
+        <!--End Section (Info Restaurant)-->
+        <!--Section Special Offers Slider-->
+        <section class="fly-wrap-slider-special-offers">
+            <div class="row">
+                <div class="fly-slider-special-offers">
+                    <ul id="fly-slider-special-offers">
+                        <li data-special-offers-slider="1" style="background-image: url('{% static 'images/Special-Offers-Slider/offer-1.jpg' %}')">
+                            <a href="#" class="fly-wrap-offers">
+                                <div class="fly-content-offers-slider">
+                                    <div class="fly-itable">
+                                        <div class="fly-icell">
+                                            <time datetime="2015-12-19T9:21:13+00:00" class="fly-date-offers">19 December 2015</time>
+                                            <span class="fly-offers-separator"></span>
+                                            <h2 class="fly-offers-title">“HAPPY HOUR” THROUGH 1PM – 2PM</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li data-special-offers-slider="1" style="background-image: url('{% static 'images/Special-Offers-Slider/offer-2.jpg' %}')">
+                            <a href="#" class="fly-wrap-offers">
+                                <div class="fly-content-offers-slider">
+                                    <div class="fly-itable">
+                                        <div class="fly-icell">
+                                            <time datetime="2015-12-20T9:21:13+00:00" class="fly-date-offers">20 December 2015</time>
+                                            <span class="fly-offers-separator"></span>
+                                            <h2 class="fly-offers-title">COOKING CLASS FRIDAY</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li data-special-offers-slider="1" style="background-image: url('{% static 'images/Special-Offers-Slider/offer-3.jpg' %}')">
+                            <a href="#" class="fly-wrap-offers">
+                                <div class="fly-content-offers-slider">
+                                    <div class="fly-itable">
+                                        <div class="fly-icell">
+                                            <time datetime="2015-12-21T9:21:13+00:00" class="fly-date-offers">21 December 2015</time>
+                                            <span class="fly-offers-separator"></span>
+                                            <h2 class="fly-offers-title">BREAKFAST MENU ONLY $17.50</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li data-special-offers-slider="1" style="background-image: url('{% static 'images/Special-Offers-Slider/offer-4.jpg' %}')">
+                            <a href="#" class="fly-wrap-offers">
+                                <div class="fly-content-offers-slider">
+                                    <div class="fly-itable">
+                                        <div class="fly-icell">
+                                            <time datetime="2015-12-22T9:21:13+00:00" class="fly-date-offers">22 December 2015</time>
+                                            <span class="fly-offers-separator"></span>
+                                            <h2 class="fly-offers-title">DESERT BAKING COURSE 10AM - 11AM</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li data-special-offers-slider="1" style="background-image: url('{% static 'images/Special-Offers-Slider/offer-5.jpg' %}')">
+                            <a href="#" class="fly-wrap-offers">
+                                <div class="fly-content-offers-slider">
+                                    <div class="fly-itable">
+                                        <div class="fly-icell">
+                                            <time datetime="2015-12-23T9:21:13+00:00" class="fly-date-offers">23 December 2015</time>
+                                            <span class="fly-offers-separator"></span>
+                                            <h2 class="fly-offers-title">CAESAR SPECIAL HOUR</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li data-special-offers-slider="1" style="background-image: url('{% static 'images/Special-Offers-Slider/offer-6.jpg' %}')">
+                            <a href="#" class="fly-wrap-offers">
+                                <div class="fly-content-offers-slider">
+                                    <div class="fly-itable">
+                                        <div class="fly-icell">
+                                            <time datetime="2015-12-24T9:21:13+00:00" class="fly-date-offers">24 December 2015</time>
+                                            <span class="fly-offers-separator"></span>
+                                            <h2 class="fly-offers-title">WINE TESTING DAY 1AM - 2AM</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li data-special-offers-slider="1" style="background-image: url('{% static 'images/Special-Offers-Slider/offer-7.jpg' %}')">
+                            <a href="#" class="fly-wrap-offers">
+                                <div class="fly-content-offers-slider">
+                                    <div class="fly-itable">
+                                        <div class="fly-icell">
+                                            <time datetime="2015-12-25T9:21:13+00:00" class="fly-date-offers">25 December 2015</time>
+                                            <span class="fly-offers-separator"></span>
+                                            <h2 class="fly-offers-title">DESERT DAY “SWEET STRAWBERRY”</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li data-special-offers-slider="1" style="background-image: url('{% static 'images/Special-Offers-Slider/offer-1.jpg' %}')">
+                            <a href="#" class="fly-wrap-offers">
+                                <div class="fly-content-offers-slider">
+                                    <div class="fly-itable">
+                                        <div class="fly-icell">
+                                            <time datetime="2015-12-19T9:21:13+00:00" class="fly-date-offers">19 December 2015</time>
+                                            <span class="fly-offers-separator"></span>
+                                            <h2 class="fly-offers-title">“HAPPY HOUR” THROUGH 1PM – 2PM</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li data-special-offers-slider="1" style="background-image: url('{% static 'images/Special-Offers-Slider/offer-2.jpg' %}')">
+                            <a href="#" class="fly-wrap-offers">
+                                <div class="fly-content-offers-slider">
+                                    <div class="fly-itable">
+                                        <div class="fly-icell">
+                                            <time datetime="2015-12-20T9:21:13+00:00" class="fly-date-offers">20 December 2015</time>
+                                            <span class="fly-offers-separator"></span>
+                                            <h2 class="fly-offers-title">COOKING CLASS FRIDAY</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li data-special-offers-slider="1" style="background-image: url('{% static 'images/Special-Offers-Slider/offer-3.jpg' %}')">
+                            <a href="#" class="fly-wrap-offers">
+                                <div class="fly-content-offers-slider">
+                                    <div class="fly-itable">
+                                        <div class="fly-icell">
+                                            <time datetime="2015-12-21T9:21:13+00:00" class="fly-date-offers">21 December 2015</time>
+                                            <span class="fly-offers-separator"></span>
+                                            <h2 class="fly-offers-title">BREAKFAST MENU ONLY $17.50</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li data-special-offers-slider="1" style="background-image: url('{% static 'images/Special-Offers-Slider/offer-4.jpg' %}')">
+                            <a href="#" class="fly-wrap-offers">
+                                <div class="fly-content-offers-slider">
+                                    <div class="fly-itable">
+                                        <div class="fly-icell">
+                                            <time datetime="2015-12-22T9:21:13+00:00" class="fly-date-offers">22 December 2015</time>
+                                            <span class="fly-offers-separator"></span>
+                                            <h2 class="fly-offers-title">DESERT BAKING COURSE 10AM - 11AM</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!--Offers Slider Control-->
+                    <div class="fly-offers-slider-control" style="background-image: url('{% static 'images/Special-Offers-Slider/central-image.jpg' %}');">
+                        <div class="fly-itable">
+                            <div class="fly-icell">
+                                <div class="fly-slider-control-wrap-title">
+                                    <h3 class="fly-slider-control-title-before">Special</h3>
+                                    <h2 class="fly-slider-control-title-after">Offers</h2>
+                                    <a class="fly-special-offers-btn fly-btn fly-btn-1 fly-btn-md fly-btn-color-3" href="#">
+                                        <span>More</span>
+                                    </a>
+                                </div>
+                                <div class="fly-wrap-nav-slider">
+                                    <a id="special-offers-slider-prev" class="prev" href="#">
+                                        <i class="fa fa-angle-left"></i>
+                                    </a>
+                                    <a id="special-offers-slider-next" class="next" href="#">
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Offers Slider Control-->
+                </div>
+            </div>
+        </section>
+        <!--End Section Special Offers Slider-->
+        <!--Section (Chef of the Month)-->
+        <section class="fly-info-box container-min">
+            <div class="container">
+                <div class="row">
+                    <div class="fly-divider-space space-md"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="fly-info-box-header"><h5 class="fly-info-box-before-title"><span>Carmelo</span></h5>
+
+                            <h3 class="fly-info-box-title">HEAD CHEF</h3></div>
+                        <div class="fly-info-box-image">
+                            <img src="{% static 'images/chef-of-the-month.jpg' %}" alt="Chef of the Month"/>
+                        </div>
+                        <div class="fly-info-box-content"> Carmelo likes to use high quality, fresh ingredients in his
+                            cooking. He has a passion for delivering the highest quality possible to his diners. Carmelo
+                            has developed an exciting menu of upscale bistro food. He has a true appreciation of fresh,
+                            regional ingredients and works well with the height of the season.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="fly-divider-space space-md"></div>
+                </div>
+            </div>
+        </section>
+        <!--End Section (Chef of the Month)-->
+        <!--Section Home Gallery-->
+        <section class="fly-home-gallery">
+            <!--Home Gallery Col1-->
+            <div class="fly-home-gallery-col col-sm-4">
+                <div class="fly-home-gallery-block fly-home-gallery-height-md" style="background-image: url('{% static 'images/Home-Gallery/image-1.jpg' %}')">
+                    <a href="{% static 'images/Home-Gallery/image-1.jpg' %}" data-rel="prettyPhoto[1]" class="fly-home-gallery-overlay">
+                        <div class="fly-itable">
+                            <div class="fly-icell">
+                                <i class="flyicon-expand"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="fly-home-gallery-block fly-home-gallery-height-md" style="background-image: url('{% static 'images/Home-Gallery/image-2.jpg' %}')">
+                    <a href="{% static 'images/Home-Gallery/image-2.jpg' %}" data-rel="prettyPhoto[1]" class="fly-home-gallery-overlay">
+                        <div class="fly-itable">
+                            <div class="fly-icell">
+                                <i class="flyicon-expand"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="fly-home-gallery-block fly-home-gallery-height-md" style="background-image: url('{% static 'images/Home-Gallery/image-3.jpg' %}')">
+                    <a href="{% static 'images/Home-Gallery/image-3.jpg' %}" data-rel="prettyPhoto[1]" class="fly-home-gallery-overlay">
+                        <div class="fly-itable">
+                            <div class="fly-icell">
+                                <i class="flyicon-expand"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="fly-home-gallery-col col-sm-4">
+                <div class="fly-home-gallery-block-title fly-home-gallery-height-md">
+                    <div class="fly-itable">
+                        <div class="fly-icell">
+                            <h5 class="fly-home-gallery-before-title"><span>Some moments</span></h5>
+                            <h3 class="fly-home-gallery-title">FROM OUR PUB</h3>
+                            <a class="fly-btn fly-btn-1 fly-btn-md fly-btn-color-1" href="#">
+                                <span>All Photo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="fly-home-gallery-block fly-home-gallery-height-lg" style="background-image: url('{% static 'images/Home-Gallery/image-4.jpg' %}')">
+                    <a href="{% static 'images/Home-Gallery/image-4.jpg' %}" data-rel="prettyPhoto[1]" class="fly-home-gallery-overlay">
+                        <div class="fly-itable">
+                            <div class="fly-icell">
+                                <i class="flyicon-expand"></i>
+                            </div>
+                        </div>
+                    </a></div>
+            </div>
+            <div class="fly-home-gallery-col col-sm-4">
+                <div class="fly-home-gallery-block fly-home-gallery-height-lg" style="background-image: url('{% static 'images/Home-Gallery/image-5.jpg' %}')">
+                    <a href="{% static 'images/Home-Gallery/image-5.jpg' %}" data-rel="prettyPhoto[1]" class="fly-home-gallery-overlay">
+                        <div class="fly-itable">
+                            <div class="fly-icell">
+                                <i class="flyicon-expand"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="fly-home-gallery-block fly-home-gallery-height-md" style="background-image: url('{% static 'images/Home-Gallery/image-6.jpg' %}')">
+                    <a href="{% static 'images/Home-Gallery/image-6.jpg' %}" data-rel="prettyPhoto[1]" class="fly-home-gallery-overlay">
+                        <div class="fly-itable">
+                            <div class="fly-icell"><i class="flyicon-expand"></i></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--End Section Home Gallery-->        <!--Section Testimonials-->
+        <section class="fly-wrap-testimonials-slider container-min">
+            <div class="container">
+                <div class="row">
+                    <div class="fly-divider-space space-md"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="fly-testimonials-slider"><h5 class="fly-testimonials-slider-before-title"><span>Warm Words</span>
+                        </h5>
+
+                            <h3 class="fly-testimonials-slider-title">FROM OUR CLIENTS</h3>
+                            <ul id="fly-testimonials-slider">
+                                <li data-special-offers-slider="1" class="container">
+                                    <div class="fly-testimonials-slider-author">
+                                        <span class="fly-testimonials-slider-author-image">
+                                            <img src="{% static 'images/avatars/avatar-1.jpg' %}" alt="Avatar 1"/>
+                                        </span>
+                                        <a href="#" class="fly-testimonials-slider-author-name">Bryan Nylson</a>
+                                    </div>
+                                    <div class="fly-testimonials-slider-content"> When arriving in town, this is one of
+                                        the first stops for something interesting and amazing to eat. The menu has
+                                        choices for everyone and it is the kind of place you want to come back to. I
+                                        love the fish and chips there as well.
+                                    </div>
+                                </li>
+                                <li data-special-offers-slider="1" class="container">
+                                    <div class="fly-testimonials-slider-author">
+                                         <span class="fly-testimonials-slider-author-image">
+                                                <img src="{% static 'images/avatars/avatar-2.jpg' %}" alt="Avatar 2"/>
+                                        </span>
+                                        <a href="#" class="fly-testimonials-slider-author-name">Thomas Jefferson</a>
+                                    </div>
+                                    <div class="fly-testimonials-slider-content"> I wanted to write to say thank you for
+                                        an amazing experience and delicious dinner tonight. You made my baby daughter
+                                        and I feel very welcome! I look forward to coming back. Jenny was so wonderful
+                                        with my daughter too and had her laughing most of the night. Best regards,
+                                        Allison
+                                    </div>
+                                </li>
+                                <li data-special-offers-slider="1" class="container">
+                                    <div class="fly-testimonials-slider-author">
+                                         <span class="fly-testimonials-slider-author-image">
+                                                <img src="{% static 'images/avatars/avatar-3.jpg' %}" alt="Avatar 3"/>
+                                         </span>
+                                        <a href="#" class="fly-testimonials-slider-author-name">Lisa Petterson</a>
+                                    </div>
+                                    <div class="fly-testimonials-slider-content"> I just wanted to thank you for
+                                        providing a great birthday celebration for me. Your staff did an excellent job
+                                        and the food was superb. Everyone was impressed. I will recommend your expertise
+                                        to my friends for an event such as this. Thanks again!
+                                    </div>
+                                </li>
+                            </ul>
+                            <div id="fly-testimonials-slider-controls" class="fly-testimonials-slider-controls"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="fly-divider-space space-md"></div>
+                </div>
+            </div>
+        </section>
+        <!--End Section Testimonials-->
+        <!--Section Go To Top-->
+        <section class="fly-go-to-top fly-theme-color-4">
+            <div class="row">
+                <div class="fly-divider-space space-sm"></div>
+            </div>
+            <div class="row"><a class="fly-btn fly-btn-1 fly-btn-md fly-btn-color-2 fly-btn-to-top" href="#main"><span>TOP</span></a>
+            </div>
+            <div class="row">
+                <div class="fly-divider-space space-sm"></div>
+            </div>
+        </section>
+        <!--End Section Go To Top-->
+        <!-- Section quick nav -->
+        <section class="fly-quick-nav">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="fly-quick-nav-item col-sm-6" style="background-image: url('{% static 'images/Quick-Menu/bg-1.jpg' %}')">
+                        <i class="fly-quick-nav-icon flyicon-cutlery"></i>
+                        <h4 class="fly-quick-nav-before-title">KEEP HUNGER?</h4>
+                        <h3 class="fly-quick-nav-title">FULFILL YOUR CRAVING</h3>
+                        <a class="fly-btn fly-btn-1 fly-btn-md fly-btn-color-3 fly-btn-quick-nav" href="menu.html"><span>MORE</span></a>
+                    </div>
+                    <div class="fly-quick-nav-item col-sm-6" style="background-image: url('{% static 'images/Quick-Menu/bg-4.jpg' %}')">
+                        <i class="fly-quick-nav-icon flyicon-gift"></i>
+                        <h4 class="fly-quick-nav-before-title">EVERY DAY</h4>
+                        <h3 class="fly-quick-nav-title">OFFERS JUST FOR YOU</h3>
+                        <a class="fly-btn fly-btn-1 fly-btn-md fly-btn-color-3 fly-btn-quick-nav" href="offers.html"><span>MORE</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section quick nav -->
+    </div>
+    <!--Footer-->
+    <footer class="fly-site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="fly-divider-space space-sm"></div>
+            </div>
+            <div class="row">
+                <div class="fly-footer-content clearfix">
+                    <aside class="widget widget-newsletter widget-newsletter-footer">
+                        <h4 class="widget-title-before">
+                            <i class="flyicon-mail2"></i> <span>connect</span>
+                        </h4>
+
+                        <h3 class="widget-title">SUBSCRIBE TO NEWSLETTER</h3>
+
+                        <form class="newsletter-form" action="#"><input type="email" class="newsletter-input" placeholder="please enter your email"/></form>
+                    </aside>
+                    <a class="fly-footer-logo" href="./"> <img src="{% static 'images/logo.png' %}" alt="Footer Logo"/> </a>
+
+                    <div class="fly-footer-info"> bar, bistro & restaurant <br> 41126 Oxford Road - england - phone
+                        <a href="callto:44 023 642 124">+44 023 642 124</a>
+                    </div>
+                    <div class="fly-social">
+                        <a class="fly-social-link" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a class="fly-social-link" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a class="fly-social-link" href="#" target="_blank"><i class="fa fa-google-plus"></i></a>
+                        <a class="fly-social-link" href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="fly-divider-space space-sm"></div>
+            </div>
+        </div>
+        <div class="fly-footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="fly-copyright-text"> FlyCoffee - HTML Template © made by
+                        <a rel="nofollow" href="http://flytemplates.com/" target="_blank">Flytemplates</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+{% endblock  %}
