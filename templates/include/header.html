@@ -1,0 +1,45 @@
+{% load static %}
+<header class="fly-header-site fly-header-type-1 fly-sticky-header-on">
+    <div class="fly-nav-wrap fly-nav-left">
+        <nav class="fly-site-navigation primary-navigation" id="fly-menu-primary">
+            <ul class="fly-nav-menu">
+                <li><a href="./">Домой</a>
+                    <ul>
+                        <li><a href="index.html">HOME PAGE</a></li>
+                        <li><a href="index2.html">HEADER TYPE 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="story.html">STORY</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="reservation.html">RESERVATION</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--Logo-->
+    <div class="fly-wrap-logo"><a class="fly-logo" href="./"> <img src="{{setting.image.url}}" alt="Logo"/> </a></div>
+    <div class="fly-nav-wrap fly-nav-right">
+        <nav class="fly-site-navigation secondary-navigation" id="fly-menu-secondary">
+            <ul class="fly-nav-menu">
+                <li><a href="offers.html">OFFERS</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="photo.html">PHOTO</a></li>
+                <li class="menu-item-has-children"><a href="contact.html">CONTACT</a>
+                    <ul class="sub-menu">
+                        <li class="menu-item-has-children"><a href="#">SUB MENU LEVEL 1</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item-has-children"><a href="#">SUB MENU LEVEL 2</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">SUB MENU LEVEL 3</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">SUB MENU LEVEL 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SUB MENU LEVEL 1</a></li>
+                        <li><a href="#">SUB MENU LEVEL 1</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
