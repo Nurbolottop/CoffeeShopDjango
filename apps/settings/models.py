@@ -45,3 +45,44 @@ class Setting(models.Model):
     class Meta:
         verbose_name = "Настройки"
         verbose_name_plural = "Настройка"
+        
+class Slide(models.Model):
+    title = models.CharField(
+        max_length=255,
+        verbose_name="Название"
+    )
+    descriptions = models.TextField(
+        verbose_name="Описание"
+    )
+    image = models.ImageField(
+        upload_to="slide_image/",
+        verbose_name="Фотография"
+    )
+    
+    def __str__(self):
+        return f"{self.title} - {self.descriptions}"
+    
+    class Meta:
+        verbose_name = "Слайды"
+        verbose_name_plural = "Слайд"
+
+class About(models.Model):
+    title = models.CharField(
+        max_length=255,
+        verbose_name="О нас"
+    )
+    descriptions = models.TextField(
+        verbose_name="Описание о нас"
+    )
+    image = models.ImageField(
+        upload_to="about/",
+        verbose_name="Фотография о нас"
+    )
+    
+    def __str__(self):
+        return f"{self.title} - {self.descriptions}"
+
+    class Meta:
+        verbose_name = "О нас"
+        verbose_name_plural = "О нас"
+        

@@ -2,9 +2,6 @@
 {%load static %}
 {% block content %}
 
-
-
-
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPWGNL" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
@@ -19,105 +16,128 @@
 <!--/ Loading Spinner -->
 <div id="page" class="hfeed site invisible">
     {% include "include/header.html"%}
-    <div id="main" class="site-main" role="main">        <!--Header Image-->
-        <section class="fly-section-image fly-header-image fly-section-overlay fly-section-height-md parallax"
-                 style="background-image: url('images/Special-Offers-Details/offers-head-bg.jpg')">
-            <div class="container">
-                <div class="row"><h3 class="fly-section-image-title-before">Special</h3>
-
-                    <h2 class="fly-section-image-title-after">OFFERS</h2></div>
-            </div>
-        </section>
-        <!--End Header Image-->        <!--Divider-->
-        <section class="fly-divider-space space-sm"></section>
-        <!--End Divider-->        <!--Special Offers-->
-        <section class="fly-special-offers fly-special-offers-details container-min">
+    <div id="main" class="site-main" role="main">
+        <!--Header Image-->
+        <section class="fly-section-image fly-header-image fly-section-overlay fly-section-height-md parallax" style="background-image: url('{% static 'images/Story/header-bg.jpg' %}')">
             <div class="container">
                 <div class="row">
-                    <div class="fly-offers-details-header">
-                        <time datetime="2015-04-06" class="fly-offers-details-date">06 April 2014</time>
-                        <h4 class="fly-offers-details-title"> BREAKFAST MENU ONLY <span>$17.50</span></h4></div>
-                    <div class="fly-offers-details-content">
-                        <div class="fly-offers-details-text"> In condimentum facilisis porta. Sed nec diam eu diam
-                            mattis viverra.<br> Nulla fringilla, orci ac euismod semper, diam porttitor.
+                    <h3 class="fly-section-image-title-before">Our</h3>
+                    <h2 class="fly-section-image-title-after">STORY</h2>
+                </div>
+            </div>
+        </section>
+        <!--End Header Image-->
+        <!--Section Story-->
+        <section class="fly-story-box container-min fly-theme-color-4">
+            <div class="container">
+                <div class="row">
+                    <div class="fly-divider-space space-md" style="height: 145px;"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="fly-story-box-header"><h3 class="fly-story-box-title">ENGLISH DREAM</h3>
+
+                            <div class="fly-story-box-divider"></div>
                         </div>
-                        <div class="fly-offers-details-thumbnail"><img
-                                src="images/Special-Offers-Details/offers-details-1.jpg" alt="Offer Details 1"/></div>
-                        <div class="fly-offers-details-info"><h3 class="fly-offers-info-title">PREPARATION</h3>
-
-                            <p> Vestibulum nec ante turpis. Praesent posuere dolor at risus tempor, eget suscipit arcu
-                                posuere. </p>
-
-                            <p> Quisque scelerisque ex non sapien sagittis fermentum. Aliquam malesuada, neque et
-                                iaculis convallis, nisl felis dictum odio, et accumsan libero risus id nunc. </p>
-
-                            <p> Phasellus faucibus, quam tempor tincidunt fringilla, ante turpis dictum felis, ac
-                                egestas ex mi a nisl. </p>
-
-                            <p> Ut porttitor bibendum lorem, vitae pellentesque lorem molestie et. Nunc sit amet lectus
-                                volutpat, vehicula dolor sed, rutrum tellus. Vestibulum quis lectus augue. </p>
-
-                            <p> Proin sit amet turpis ac nisi gravida pharetra quis a arcu. Suspendisse convallis
-                                facilisis massa, sit amet rutrum odio. Nulla ac volutpat erat, sed bibendum nunc. Nulla
-                                aliquam et elit nec pharetra. </p>
-
-                            <p> Nunc accumsan eu eros eget gravida. </p></div>
-                    </div>
-                    <div class="fly-offers-details-meta"><a href="#" class="fw-offers-details-loveit">
-                        <div><i class="fa fa-heart"></i> <span>4</span></div>
-                    </a>
-
-                        <div class="fly-offers-details-share-btn"><h5 class="fly-offers-details-share-title">Share</h5>
-                            <a class="fly-offers-share fly-share-facebook" href="https://www.facebook.com/"
-                               target="_blank">Facebook</a> <a class="fly-offers-share fly-share-twitter"
-                                                               href="https://twitter.com/" target="_blank">Twitter</a>
-                            <a class="fly-offers-share fly-share-google" href="https://plus.google.com/"
-                               target="_blank">Google</a></div>
-                        <div class="fly-offers-details-back-to-list-btn"><a
-                                class="fly-btn fly-btn-1 fly-btn-md fly-btn-color-2" href="offers.html"><span>BACK TO LIST</span></a>
+                        <div class="fly-story-box-content"> A charming neighbourhood restaurant and bar, located in the
+                            heart of the city; a true gateway to gourmet farm-to-table dining, inspired by seasonal
+                            produce and the province's local suppliers.
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="fly-other-offers">
-                        <div class="fly-divider-space space-md"></div>
-                        <h3 class="fly-other-offers-title"><span>OTHER OFFERS</span></h3>
-                        <ul class="fly-offers-list">
-                            <li class="fly-offer col-sm-4 col-xs-6"><a class="fly-offers-thumbnail"
-                                                                       href="offers-details.html"> <img
-                                    src="images/Special-Offers/offers-1.jpg" alt="Offers 1"/> </a>
-
-                                <div class="fly-offers-content">
-                                    <time datetime="2015-04-06" class="fly-offers-date">06 April 2014</time>
-                                    <h5 class="fly-offers-title"><a href="offers-details.html">“HAPPY HOUR” THROUGH 1PM
-                                        – 2PM</a></h5></div>
-                            </li>
-                            <li class="fly-offer col-sm-4 col-xs-6"><a class="fly-offers-thumbnail"
-                                                                       href="offers-details.html"> <img
-                                    src="images/Special-Offers/offers-2.jpg" alt="Offers 2"/> </a>
-
-                                <div class="fly-offers-content">
-                                    <time datetime="2015-04-06" class="fly-offers-date">06 April 2014</time>
-                                    <h5 class="fly-offers-title"><a href="offers-details.html">cooking class friday</a>
-                                    </h5></div>
-                            </li>
-                            <li class="fly-offer col-sm-4 col-xs-6"><a class="fly-offers-thumbnail"
-                                                                       href="offers-details.html"> <img
-                                    src="images/Special-Offers/offers-3.jpg" alt="Offers 3"/> </a>
-
-                                <div class="fly-offers-content">
-                                    <time datetime="2015-04-06" class="fly-offers-date">06 April 2014</time>
-                                    <h5 class="fly-offers-title"><a href="offers-details.html">BREAKFAST MENU ONLY
-                                        $17.50</a></h5></div>
-                            </li>
-                        </ul>
-                    </div>
+                    <div class="fly-divider-space space-md" style="height: 145px;"></div>
                 </div>
             </div>
         </section>
-        <!--End Special Offers-->        <!--Divider-->
-        <section class="fly-divider-space space-md"></section>
-        <!--End Divider-->        <!--Section Go To Top-->
+        <!--End Section Story-->
+        <!--Section Image-->
+        <section class="fly-section-image fly-section-height-sm" style="background-image: url('{% static 'images/Story/image-1.jpg' %}')"></section>
+        <!--End Section Image-->
+        <!--Section Info Box-->
+        <section class="fly-story-box container-min">
+            <div class="container">
+                <div class="row">
+                    <div class="fly-divider-space space-md" style="height: 145px;"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="fly-story-box-header"><h3 class="fly-story-box-title">ORIGIN AND TERRITORY</h3>
+
+                            <div class="fly-story-box-divider"></div>
+                        </div>
+                        <div class="fly-story-box-content"> Set in the heart of the city, FlyCoffee is a casual, one of
+                            a kind bistro offering a variety of comforting and original English inspired dishes. At
+                            FlyCoffee, one can expect to be enthusiastically received by the restaurant’s young and
+                            dynamic team.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="fly-divider-space space-md" style="height: 145px;"></div>
+                </div>
+            </div>
+        </section>
+        <!--End Section Info Box-->
+        <!--Section Image-->
+        <section class="fly-section-image fly-section-height-sm" style="background-image: url('{% static 'images/Story/image-2.jpg' %}')"></section>
+        <!--End Section Image-->
+        <!--Section Info Box-->
+        <section class="fly-story-box container-min">
+            <div class="container">
+                <div class="row">
+                    <div class="fly-divider-space space-md" style="height: 145px;"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="fly-story-box-header"><h3 class="fly-story-box-title">THE TEAM</h3>
+
+                            <div class="fly-story-box-divider"></div>
+                        </div>
+                        <div class="fly-story-box-content"> At the head of the team are the restaurant’s four owners:
+                            Victor Becker, Sébastien Carter, Nick Durrell and John Elford. The group shares a true love
+                            for the flavourful cooking the Iberian peninsula is known for.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="fly-divider-space space-md" style="height: 145px;"></div>
+                </div>
+            </div>
+        </section>
+        <!--End Section Info Box-->
+        <!--Section Image-->
+        <section class="fly-section-image fly-section-height-sm" style="background-image: url('{% static 'images/Story/image-3.jpg' %}')"></section>
+        <!--End Section Image-->
+        <!--Section Info Box-->
+        <section class="fly-story-box container-min">
+            <div class="container">
+                <div class="row">
+                    <div class="fly-divider-space space-md" style="height: 145px;"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="fly-story-box-header"><h3 class="fly-story-box-title">CULINARY</h3>
+
+                            <div class="fly-story-box-divider"></div>
+                        </div>
+                        <div class="fly-story-box-content"> The culinary experience at FlyCoffee is enhanced by a
+                            courteous service and an appealing decor. The menu’s specialties, as combined with a
+                            pleasant atmosphere, are sure to satisfy your longing for delectable food enjoyed in the
+                            good company of friends.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="fly-divider-space space-md" style="height: 145px;"></div>
+                </div>
+            </div>
+        </section>
+        <!--End Section Info Box-->
+        <!--Section Image-->
+        <section class="fly-section-image fly-section-height-sm" style="background-image: url('{% static 'images/Story/image-4.jpg' %}')"></section>
+        <!--End Section Image-->
+        <!--Section Go To Top-->
         <section class="fly-go-to-top fly-theme-color-4">
             <div class="row">
                 <div class="fly-divider-space space-sm"></div>
@@ -133,13 +153,13 @@
         <section class="fly-quick-nav">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="fly-quick-nav-item col-sm-6" style="background-image: url('images/Quick-Menu/bg-1.jpg')">
+                    <div class="fly-quick-nav-item col-sm-6" style="background-image: url('{% static 'images/Quick-Menu/bg-1.jpg' %}')">
                         <i class="fly-quick-nav-icon flyicon-cutlery"></i>
                         <h4 class="fly-quick-nav-before-title">KEEP HUNGER?</h4>
                         <h3 class="fly-quick-nav-title">FULFILL YOUR CRAVING</h3>
                         <a class="fly-btn fly-btn-1 fly-btn-md fly-btn-color-3 fly-btn-quick-nav" href="menu.html"><span>MORE</span></a>
                     </div>
-                    <div class="fly-quick-nav-item col-sm-6" style="background-image: url('images/Quick-Menu/bg-4.jpg')">
+                    <div class="fly-quick-nav-item col-sm-6" style="background-image: url('{% static 'images/Quick-Menu/bg-4.jpg' %}')">
                         <i class="fly-quick-nav-icon flyicon-gift"></i>
                         <h4 class="fly-quick-nav-before-title">EVERY DAY</h4>
                         <h3 class="fly-quick-nav-title">OFFERS JUST FOR YOU</h3>
@@ -150,7 +170,7 @@
         </section>
         <!-- End Section quick nav -->
         <!--Reservation Form in HomePage -->
-        <section class="fly-wrap-home-reservation-form fly-wrap-reservation-form fly-form-light-style container-min" style="background-image: url(images/Reservation/reservation-bg.jpg)">
+        <section class="fly-wrap-home-reservation-form fly-wrap-reservation-form fly-form-light-style container-min" style="background-image: url({% static 'images/Reservation/reservation-bg.jpg' %})">
             <div class="container">
                 <div class="fly-divider-space space-sm"></div>
                 <div class="row">
@@ -228,7 +248,7 @@
                         <form class="newsletter-form" action="#"><input type="email" class="newsletter-input"
                                                                         placeholder="please enter your email"/></form>
                     </aside>
-                    <a class="fly-footer-logo" href="./"> <img src="images/logo.png" alt="Footer Logo"/> </a>
+                    <a class="fly-footer-logo" href="./"> <img src="{% static 'images/logo.png' %}" alt="Footer Logo"/> </a>
 
                     <div class="fly-footer-info"> bar, bistro & restaurant <br> 41126 Oxford Road - england - phone <a
                             href="callto:44 023 642 124">+44 023 642 124</a></div>

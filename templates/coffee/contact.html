@@ -21,7 +21,7 @@
     {% include "include/header.html"%}
     <div id="main" class="site-main" role="main">        <!--Header Section-->
         <section class="fly-section-image fly-header-image fly-section-overlay fly-section-height-md parallax"
-                 style="background-image: url('images/Contact/contact-header-bg.jpg')">
+                 style="background-image: url('{% static 'images/Contact/contact-header-bg.jpg'%}')">
             <div class="container">
                 <div class="row"><h3 class="fly-section-image-title-before">Say hello</h3>
 
@@ -100,13 +100,13 @@
         <section class="fly-quick-nav">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="fly-quick-nav-item col-sm-6" style="background-image: url('images/Quick-Menu/bg-1.jpg')">
+                    <div class="fly-quick-nav-item col-sm-6" style="background-image: url('{% static 'images/Quick-Menu/bg-1.jpg'%}')">
                         <i class="fly-quick-nav-icon flyicon-cutlery"></i>
                         <h4 class="fly-quick-nav-before-title">KEEP HUNGER?</h4>
                         <h3 class="fly-quick-nav-title">FULFILL YOUR CRAVING</h3>
                         <a class="fly-btn fly-btn-1 fly-btn-md fly-btn-color-3 fly-btn-quick-nav" href="menu.html"><span>MORE</span></a>
                     </div>
-                    <div class="fly-quick-nav-item col-sm-6" style="background-image: url('images/Quick-Menu/bg-4.jpg')">
+                    <div class="fly-quick-nav-item col-sm-6" style="background-image: url('{% static 'images/Quick-Menu/bg-4.jpg'%}')">
                         <i class="fly-quick-nav-icon flyicon-gift"></i>
                         <h4 class="fly-quick-nav-before-title">EVERY DAY</h4>
                         <h3 class="fly-quick-nav-title">OFFERS JUST FOR YOU</h3>
@@ -136,7 +136,7 @@
                             <input type="email" class="newsletter-input" placeholder="please enter your email" />
                         </form>
                     </aside>
-                    <a class="fly-footer-logo" href="./"> <img src="images/logo.png" alt="Footer Logo"/> </a>
+                    <a class="fly-footer-logo" href="./"> <img src="{% static 'images/logo.png'%}" alt="Footer Logo"/> </a>
 
                     <div class="fly-footer-info"> bar, bistro & restaurant <br> 41126 Oxford Road - england - phone
                         <a href="callto:44 023 642 124">+44 023 642 124</a>
